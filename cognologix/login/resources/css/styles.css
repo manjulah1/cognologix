@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* for a plain background */
+.login-pf,
+.login-pf body {
+  background: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+  padding: 3rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-logo {
+  height: 6rem;
+}
+
+.app-title {
+  font-size: 2rem !important;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* IDP Provider Styles */
+.idp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  margin: 10px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+a.idp-button:hover {
+  text-decoration: none;
+}
+
+.idp-logo {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.idp-label {
+  color: #8f8f8f;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Image */
+.img-container {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Media Queries */
+
+/* tablet, mobile */
+@media screen and (max-width: 900px) {
+  .login-container {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    background-color: #fff;
+  }
+
+  .img-container {
+    width: 100%;
+    z-index: -10;
+    position: absolute;
+    /* visibility: hidden;
+    display: none; */
+  }
+
+  .app-title {
+    font-size: 1.75rem !important;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .app-logo {
+    height: 4rem;
+  }
+}
+
+h1 {
+  text-align: center;
+}
